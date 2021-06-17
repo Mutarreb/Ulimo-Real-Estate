@@ -1,0 +1,143 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title> INSERT TITLE HERE </title>
+
+  <meta name="author" content="      ADD YOUR NAME AND YOUR EMAIL ADDRESS HERE     ">
+
+  <link rel="stylesheet" href="ultimo_real_estate.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+
+  <div id="wrapper">
+
+
+    <header>
+      <img src="images/ultimo_real_estate_logo.png" width="625" height="160"
+        alt="Ultimo Real Estate, Sydney, Australia">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="property.html">Property of the Week</a></li>
+        <li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="suburb_profile.html">Suburb Profile</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" id="current">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+
+
+      <section id="col2">
+
+        <h2> Property Enquiry </h2>
+        <br>
+        <h3> Personal Information </h3>
+        <form id="form">
+          <label for="name"> Name*</label>
+          <input id="name" name="name" type="text" placeholder="Enter your full name">
+
+          <label for="mobile"> Mobile*</label>
+          <input id="mobile" name="mobile" type="text" placeholder="Enter your mobile number">
+
+          <label for="email"> Email* </label>
+          <input id="email" type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" />
+          <p> *- required filed</p>
+
+          <label> Do you want to Buy or Sell or Rent?</label>
+          <Label for="buy" class="inlin-radios"> Buy:</Label> <input type="radio" id="buy" values="buy" name="type_of_deal" required>
+          <Label for="sell" class="inlin-radios" > Sell: </Label> <input type="radio" id="sell" values="sell" name="type_of_deal" required>
+          <Label for="rent" class="inlin-radios"> Rent:</Label><input type="radio" id="rent" values="rent" name="type_of_deal" required>
+
+          <label> What property type/s are you interested in?</label>
+          <label for="unit" class="inlin-checkbox">Unit: </label> <input type="checkbox" id="unit" name="typeProperty" value="unit" >
+          <label for="townhouse" class="inlin-checkbox" >townhouse:</label> <input type="checkbox" id="townhouse" name="typeProperty"
+            value="townhouse" >
+          <label for="house" class="inlin-checkbox" > House: </label><input type="checkbox" id="house" name="typeProperty" value="house" >
+
+          <label for="bedroomNumbers"> How many bedrooms do you require?</label>
+          <input type="number" id="bedroomNumbers" name="bedroomNumbers"  required>
+
+          <label for="comments"> Comments</label>
+          <textarea type="text" id="comments" name="comments"> </textarea> <br>
+
+          <input id="submit" type="submit" onclick=" return validate()">
+        </form>
+      </section>
+      <section id="col1">
+
+        <h1>Contact</h1>
+
+        <ul>
+          <li><strong>Ultimo Real Estate</strong></li>
+          <li>20 Jones Street</li>
+          <li>ULTIMO NSW 2007</li>
+        </ul>
+
+
+        <ul>
+          <li><strong>Mob: +61 123 456 789</strong></li>
+          <li>Tel: +612 1234 5678</li>
+          <li>info@ultimorealestate.com.au</li>
+        </ul>
+
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6624.85817291638!2d151.19285829205285!3d-33.87860141454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2f6b3e5fb7%3A0xf97500fd5776ca34!2sJones%20St%2C%20Sydney%20NSW!5e0!3m2!1sen!2sau!4v1581408180870!5m2!1sen!2sau"
+          width="570" height="500" allowfullscreen=""></iframe>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <ul>
+        <li>&copy; Ultimo Real Estate 20xx</li>
+        <li><a href="www.facebook.com/UltimoRealEstate"><img src="images/facebook.png" width="30" height="30"
+              alt="Ultimo Real Estate on Facebook"></a></li>
+        <li><a href="www.instagram.com/UltimoRealEstate"><img src="images/instagram.png" width="30" height="30"
+              alt="Ultimo Real Estate on Instagram"></a></li>
+        <li><a href="www.twitter.com/UltimoRealEstate"><img src="images/twitter.png" width="30" height="30"
+              alt="Ultimo Real Estate on Twitter"></a></li>
+        <li><a href="legals.html">Legals</a></li>
+      </ul>
+    </footer>
+
+
+  </div>
+  <script src="contact.js">
+
+    // function validate() {
+    //   var name = document.getElementById("name");
+    //   var email = document.getElementById("email");
+    //   var mobile = document.getElementById("mobile");
+    //   var submit = document.getElementById("submit");
+    //   var form = document.getElementById("form");
+
+    //   if (name.value == "") {
+    //     alert("Please enter your name");
+    //   }
+    //   else {
+
+    //   }
+    // }
+
+  </script>
+</body>
+
+</html>

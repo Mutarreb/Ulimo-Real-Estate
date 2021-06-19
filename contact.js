@@ -22,7 +22,7 @@ function validate() {
         return false; 
       }
       {
-        if (confirm(' Are you sure ou want to submit your current information?'))
+        if (confirm(' Are you sure ou want to submit your current information name: ' + name.value + ' mobile: ' + mobile.value + ' email address: '+ email.value +' click OK to submit.'))
           return true;
       }
          {

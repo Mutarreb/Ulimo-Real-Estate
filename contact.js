@@ -21,10 +21,15 @@ function validate() {
         alert("Please enter your correct email address");
         return false; 
       }
-      else {
-          // alert("Please confirm you would like to submit the information which you filled in the form?");
+      {
+        if (confirm(' Are you sure ou want to submit your current information?'))
           return true;
+      }
+         {
+          return false;
+
+        }
 
       }
-    }
+    
 

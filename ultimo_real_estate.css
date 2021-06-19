@@ -184,7 +184,7 @@ text-decoration: none;
   margin: auto;
 }
 
-.prev, .next {
+.previous-arrow, .next-arrow {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -200,13 +200,13 @@ text-decoration: none;
   background-color: #9db8a486;
 }
 
-.next {
+.next-arrow {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* The dot/bullets/indicators */
-.dot{
+.bullet{
   cursor: pointer;
   height: 30px;
   width: 30px;

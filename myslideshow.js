@@ -1,3 +1,6 @@
+
+
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -12,7 +15,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slidePhotos");
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("bullet");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
